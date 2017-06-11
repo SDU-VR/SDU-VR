@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: c1eef97770acf964da6d54c5e7e84651
+timeCreated: 1497062440
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: stair_1_3:LTypeStair001
+    100004: stair_1_3:LTypeStair002
+    100006: stair_1_3:LTypeStair003
+    100008: stair_1_3:LTypeStair004
+    100010: stair_1_3:LTypeStair005
+    100012: "stair_1_3:\u5BF9\u8C61010"
+    100014: "stair_1_3:\u5BF9\u8C61011"
+    100016: "stair_1_3:\u5BF9\u8C61012"
+    100018: "stair_1_3:\u5BF9\u8C61013"
+    100020: "stair_1_3:\u5BF9\u8C61014"
+    100022: "stair_1_3:\u5BF9\u8C61015"
+    100024: stair_2:transform1
+    100026: stair_2:transform2
+    100028: stair_2:transform3
+    100030: stair_2:transform4
+    100032: stair_2:transform5
+    100034: stair_2:transform6
+    100036: stair_2:transform7
+    100038: stair_2:UTypeStair001
+    100040: "stair_2:\u5BF9\u8C61001"
+    100042: "stair_2:\u5BF9\u8C61002"
+    100044: stair_left
+    100046: stair_left_MeshPart0
+    100048: stair_left_MeshPart1
+    100050: stair_left_MeshPart2
+    100052: stair_right
+    100054: stair_right_MeshPart0
+    100056: stair_right_MeshPart1
+    100058: stair_right_MeshPart2
+    100060: stair_width
+    100062: stair_width_MeshPart0
+    100064: stair_width_MeshPart1
+    100066: tianhuaban:transform31
+    100068: tianhuaban:transform32
+    100070: tianhuaban:transform33
+    100072: tianhuaban:transform34
+    100074: tianhuaban:transform35
+    100076: tianhuaban:transform36
+    100078: tianhuaban:transform37
+    100080: tianhuaban:transform38
+    100082: tianhuaban:transform39
+    100084: tianhuaban:transform40
+    100086: tianhuaban:transform41
+    100088: transform566
+    100090: transform567
+    100092: transform568
+    100094: transform569
+    100096: transform570
+    100098: "\u5BF9\u8C61002"
+    100100: "\u5BF9\u8C61003"
+    100102: "\u5BF9\u8C61004"
+    100104: "\u5BF9\u8C61005"
+    100106: "\u5BF9\u8C61006"
+    100108: "\u5BF9\u8C61007"
+    100110: "\u5BF9\u8C61008"
+    100112: "\u5BF9\u8C61009"
+    100114: "\u5BF9\u8C61010"
+    400000: //RootNode
+    400002: stair_1_3:LTypeStair001
+    400004: stair_1_3:LTypeStair002
+    400006: stair_1_3:LTypeStair003
+    400008: stair_1_3:LTypeStair004
+    400010: stair_1_3:LTypeStair005
+    400012: "stair_1_3:\u5BF9\u8C61010"
+    400014: "stair_1_3:\u5BF9\u8C61011"
+    400016: "stair_1_3:\u5BF9\u8C61012"
+    400018: "stair_1_3:\u5BF9\u8C61013"
+    400020: "stair_1_3:\u5BF9\u8C61014"
+    400022: "stair_1_3:\u5BF9\u8C61015"
+    400024: stair_2:transform1
+    400026: stair_2:transform2
+    400028: stair_2:transform3
+    400030: stair_2:transform4
+    400032: stair_2:transform5
+    400034: stair_2:transform6
+    400036: stair_2:transform7
+    400038: stair_2:UTypeStair001
+    400040: "stair_2:\u5BF9\u8C61001"
+    400042: "stair_2:\u5BF9\u8C61002"
+    400044: stair_left
+    400046: stair_left_MeshPart0
+    400048: stair_left_MeshPart1
+    400050: stair_left_MeshPart2
+    400052: stair_right
+    400054: stair_right_MeshPart0
+    400056: stair_right_MeshPart1
+    400058: stair_right_MeshPart2
+    400060: stair_width
+    400062: stair_width_MeshPart0
+    400064: stair_width_MeshPart1
+    400066: tianhuaban:transform31
+    400068: tianhuaban:transform32
+    400070: tianhuaban:transform33
+    400072: tianhuaban:transform34
+    400074: tianhuaban:transform35
+    400076: tianhuaban:transform36
+    400078: tianhuaban:transform37
+    400080: tianhuaban:transform38
+    400082: tianhuaban:transform39
+    400084: tianhuaban:transform40
+    400086: tianhuaban:transform41
+    400088: transform566
+    400090: transform567
+    400092: transform568
+    400094: transform569
+    400096: transform570
+    400098: "\u5BF9\u8C61002"
+    400100: "\u5BF9\u8C61003"
+    400102: "\u5BF9\u8C61004"
+    400104: "\u5BF9\u8C61005"
+    400106: "\u5BF9\u8C61006"
+    400108: "\u5BF9\u8C61007"
+    400110: "\u5BF9\u8C61008"
+    400112: "\u5BF9\u8C61009"
+    400114: "\u5BF9\u8C61010"
+    2300000: stair_left_MeshPart0
+    2300002: stair_left_MeshPart1
+    2300004: stair_left_MeshPart2
+    2300006: stair_right_MeshPart0
+    2300008: stair_right_MeshPart1
+    2300010: stair_right_MeshPart2
+    2300012: stair_width_MeshPart0
+    2300014: stair_width_MeshPart1
+    3300000: stair_left_MeshPart0
+    3300002: stair_left_MeshPart1
+    3300004: stair_left_MeshPart2
+    3300006: stair_right_MeshPart0
+    3300008: stair_right_MeshPart1
+    3300010: stair_right_MeshPart2
+    3300012: stair_width_MeshPart0
+    3300014: stair_width_MeshPart1
+    4300000: stair_width_MeshPart0
+    4300002: stair_width_MeshPart1
+    4300004: stair_left_MeshPart0
+    4300006: stair_left_MeshPart1
+    4300008: stair_left_MeshPart2
+    4300010: stair_right_MeshPart0
+    4300012: stair_right_MeshPart1
+    4300014: stair_right_MeshPart2
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
