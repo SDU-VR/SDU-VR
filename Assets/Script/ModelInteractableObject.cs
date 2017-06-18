@@ -27,6 +27,10 @@ public class ModelInteractableObject : VRTK_InteractableObject {
 	private Vector3 pivot;
 	private Vector3 scaleDelta;
 	private Transform headset;
+	//add
+	private GameObject textPanel;
+	//private Quaternion targetRotaion;
+	//add end
 
 	private static ModelInteractableObject[] _models;
 	private static ModelInteractableObject[] models {
@@ -49,6 +53,10 @@ public class ModelInteractableObject : VRTK_InteractableObject {
 		pivot = new Vector3 (0, Pivot, 0);
 		scaleDelta = new Vector3 (Scale, Scale, Scale) / SpeedFrame;
 		headset = VRTK_DeviceFinder.HeadsetTransform();
+		//add
+		//targetRotaion = GameObject.Find("ceiling1.4").transform.rotation;
+		textPanel = this.transform.GetChild (0).FindChild("Text").gameObject;
+		//add end
 	}
 
     public override void StartUsing(GameObject currentUsingObject) {
@@ -104,7 +112,12 @@ public class ModelInteractableObject : VRTK_InteractableObject {
 			transform.localScale -= scaleDelta;
             yield return new WaitForEndOfFrame();
         }
-        state = State.PLACED;
+		//add
+		//GetComponentInChildren<Animator>().enabled = false;
+		//this.transform.GetChild (0).rotation = Quaternion.identity;
+		textPanel.SetActive(!textPanel.activeSelf);
+		//add end
+		state = State.PLACED;
     }
 
 	private IEnumerator moveBack() {
@@ -115,6 +128,11 @@ public class ModelInteractableObject : VRTK_InteractableObject {
 			transform.localScale += scaleDelta;
 			yield return new WaitForEndOfFrame();
 		}
+		//add
+		//GetComponentInChildren<Animator>().enabled = true;
+		//this.transform.GetChild (0).rotation = targetRotaion;
+		textPanel.SetActive(!textPanel.activeSelf);
+		//add end
 		state = State.IDLE;
 	}
 
