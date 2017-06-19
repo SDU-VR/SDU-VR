@@ -18,7 +18,9 @@ public class ModelInteractableObject : VRTK_InteractableObject {
 	[Tooltip("Pivot差值")]
 	public float Pivot = 0;
 	[Tooltip("FloorInfoPanel用于显示楼层信息")]
-	public GameObject FloorInfoPanel;
+	public ModelInfoPanel FloorInfoPanel;
+	[Tooltip("FloorInfoPanel中显示的信息")]
+	public string Info;
 
 	private enum State { IDLE, MOVING, PLACED }
 
@@ -86,12 +88,21 @@ public class ModelInteractableObject : VRTK_InteractableObject {
 		base.StartTouching (currentTouchingObject);
 		if (state == State.IDLE) {
 			FloorInfoPanel.gameObject.SetActive (true);
+			FloorInfoPanel.SetText (Info);
 		}
+
+		VRTK_ControllerActions action = currentTouchingObject.GetComponent<VRTK_ControllerActions> ();
+		action.ToggleHighlightTrigger (true, Color.yellow);
+		action.SetControllerOpacity (0.5f);
 	}
 
 	public override void StopTouching (GameObject previousTouchingObject) {
 		base.StopTouching (previousTouchingObject);
 		FloorInfoPanel.gameObject.SetActive (false);
+
+		VRTK_ControllerActions action = previousTouchingObject.GetComponent<VRTK_ControllerActions> ();
+		action.ToggleHighlightTrigger (false);
+		action.SetControllerOpacity (1f);
 	}
 
     private IEnumerator moveToPlayArea() {

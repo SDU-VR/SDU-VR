@@ -14,6 +14,7 @@ public class DoorInteractableObject : VRTK_InteractableObject {
 	public bool IsOut;
 
 	private DoorDestinationMarker marker;
+	private Transform controller;
 
 	void Awake(){
 		if(Room == null)
@@ -22,6 +23,7 @@ public class DoorInteractableObject : VRTK_InteractableObject {
 
 	void Start(){
 		marker = GetComponent<DoorDestinationMarker> ();
+		controller = VRTK_DeviceFinder.DeviceTransform (VRTK_DeviceFinder.Devices.Right_Controller);
 	}
 
 	public override void StartUsing (GameObject currentUsingObject) {
@@ -34,6 +36,24 @@ public class DoorInteractableObject : VRTK_InteractableObject {
 		if (IsOut) {
 			Room.SetActive (false);
 		}
+	}
+
+	public override void StartTouching (GameObject currentTouchingObject) {
+		base.StartTouching (currentTouchingObject);
+
+		if ((controller.position - transform.position).magnitude < 0.5) {
+			VRTK_ControllerActions action = currentTouchingObject.GetComponent<VRTK_ControllerActions> ();
+			action.ToggleHighlightGrip (true, Color.yellow);
+			action.SetControllerOpacity (0.5f);
+		}
+	}
+
+	public override void StopTouching (GameObject previousTouchingObject) {
+		base.StopTouching (previousTouchingObject);
+
+		VRTK_ControllerActions action = previousTouchingObject.GetComponent<VRTK_ControllerActions> ();
+		action.ToggleHighlightGrip (false);
+		action.SetControllerOpacity (1f);
 	}
 
 }
