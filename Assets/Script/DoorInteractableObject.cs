@@ -29,12 +29,14 @@ public class DoorInteractableObject : VRTK_InteractableObject {
 	public override void StartUsing (GameObject currentUsingObject) {
 		base.StartUsing (currentUsingObject);
 
-		if (!IsOut) {
-			Room.SetActive (true);
-		}
-		marker.Teleport (currentUsingObject);
-		if (IsOut) {
-			Room.SetActive (false);
+		if ((controller.position - transform.position).magnitude < 0.5) {
+			if (!IsOut) {
+				Room.SetActive (true);
+			}
+			marker.Teleport (currentUsingObject);
+			if (IsOut) {
+				Room.SetActive (false);
+			}
 		}
 	}
 
