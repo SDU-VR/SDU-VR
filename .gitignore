@@ -79,3 +79,11 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# User Define
+/Assets/Library/MeshBaker/docs
+/Assets/Library/MeshBaker/docs.meta
+/Assets/Library/MeshBaker/Examples
+/Assets/Library/MeshBaker/Examples.meta
+/Assets/Library/VRTK/Examples
+/Assets/Library/VRTK/Examples.meta

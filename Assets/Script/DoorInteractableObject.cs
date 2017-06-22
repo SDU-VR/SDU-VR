@@ -10,6 +10,8 @@ public class DoorInteractableObject : VRTK_InteractableObject {
 
 	[Tooltip("传送相关的房间")]
 	public GameObject Room;
+	[Tooltip("大厅的大模型")]
+	public GameObject Model;
 	[Tooltip("这个门是返回大厅的门吗")]
 	public bool IsOut;
 
@@ -19,6 +21,8 @@ public class DoorInteractableObject : VRTK_InteractableObject {
 	void Awake(){
 		if(Room == null)
 			Debug.LogError("["+name+"] Room没有设置！");
+		if(Model == null)
+			Debug.LogError("["+name+"] Model没有设置！");
 	}
 
 	void Start(){
@@ -32,10 +36,12 @@ public class DoorInteractableObject : VRTK_InteractableObject {
 		if ((controller.position - transform.position).magnitude < 0.5) {
 			if (!IsOut) {
 				Room.SetActive (true);
+				Model.SetActive (false);
 			}
 			marker.Teleport (currentUsingObject);
 			if (IsOut) {
 				Room.SetActive (false);
+				Model.SetActive (true);
 			}
 		}
 	}
