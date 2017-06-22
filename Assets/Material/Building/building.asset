@@ -15,6 +15,8 @@ MonoBehaviour:
   materials:
   - {fileID: 2100000, guid: fc982d3abffe49e47b7cff0a9b6bc4dd, type: 2}
   - {fileID: 2100000, guid: acec071655c82bc4493a6ea9bd057c6c, type: 2}
+  - {fileID: 2100000, guid: d6ef4442a9e09784f84858c4c79b9ecd, type: 2}
+  - {fileID: 2100000, guid: 789d8e964651b4846abe64c5c5505cdd, type: 2}
   - {fileID: 2100000, guid: 6583ce13c1e7d9a40ba09462c1ea29fe, type: 2}
   - {fileID: 2100000, guid: 22b70629f9fdf02448f2724948cba371, type: 2}
   - {fileID: 2100000, guid: d154d3b21a9419b4fb402dd0c3581c09, type: 2}
@@ -27,9 +29,9 @@ MonoBehaviour:
     atlasRect:
       serializedVersion: 2
       x: 0.40014648
-      y: 0.49365234
+      y: 0.48950195
       width: 0.39941406
-      height: 0.49291992
+      height: 0.48876953
     srcObjName: F1_floor
     samplingRectMatAndUVTiling:
       serializedVersion: 2
@@ -53,7 +55,7 @@ MonoBehaviour:
     atlasRect:
       serializedVersion: 2
       x: 0.00024414062
-      y: 0.9914551
+      y: 0.98291016
       width: 0.0029296875
       height: 0.00390625
     srcObjName: F1_wall
@@ -75,13 +77,65 @@ MonoBehaviour:
       y: 0
       width: 1
       height: 1
+  - material: {fileID: 2100000, guid: d6ef4442a9e09784f84858c4c79b9ecd, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.9914551
+      width: 0.0029296875
+      height: 0.00390625
+    srcObjName: light
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+  - material: {fileID: 2100000, guid: 789d8e964651b4846abe64c5c5505cdd, type: 2}
+    atlasRect:
+      serializedVersion: 2
+      x: 0.00024414062
+      y: 0.9873047
+      width: 0.0029296875
+      height: 0.0036621094
+    srcObjName: light
+    samplingRectMatAndUVTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    sourceMaterialTiling:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
+    samplingEncapsulatinRect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 1
+      height: 1
   - material: {fileID: 2100000, guid: 6583ce13c1e7d9a40ba09462c1ea29fe, type: 2}
     atlasRect:
       serializedVersion: 2
-      x: 0.40014648
+      x: 0.00024414062
       y: 0.00024414062
       width: 0.39941406
-      height: 0.49291992
+      height: 0.48876953
     srcObjName: F2_floor0_MeshPart0
     samplingRectMatAndUVTiling:
       serializedVersion: 2
@@ -107,7 +161,7 @@ MonoBehaviour:
       x: 0.00024414062
       y: 0.9958496
       width: 0.0029296875
-      height: 0.0036621094
+      height: 0.00390625
     srcObjName: F2_floor0_MeshPart0
     samplingRectMatAndUVTiling:
       serializedVersion: 2
@@ -131,9 +185,9 @@ MonoBehaviour:
     atlasRect:
       serializedVersion: 2
       x: 0.00024414062
-      y: 0.49365234
+      y: 0.48950195
       width: 0.39941406
-      height: 0.49291992
+      height: 0.48876953
     srcObjName: F3_floor_MeshPart0
     samplingRectMatAndUVTiling:
       serializedVersion: 2
@@ -157,9 +211,9 @@ MonoBehaviour:
     atlasRect:
       serializedVersion: 2
       x: 0.00024414062
-      y: 0.98706055
+      y: 0.97875977
       width: 0.0029296875
-      height: 0.00390625
+      height: 0.0036621094
     srcObjName: stair_left_MeshPart2
     samplingRectMatAndUVTiling:
       serializedVersion: 2
@@ -182,10 +236,10 @@ MonoBehaviour:
   - material: {fileID: 2100000, guid: de73637929df96e45bfb20109bf9db65, type: 2}
     atlasRect:
       serializedVersion: 2
-      x: 0.00024414062
+      x: 0.40014648
       y: 0.00024414062
       width: 0.39941406
-      height: 0.49291992
+      height: 0.48876953
     srcObjName: Cylinders
     samplingRectMatAndUVTiling:
       serializedVersion: 2
@@ -211,7 +265,7 @@ MonoBehaviour:
       x: 0.8000488
       y: 0.00024414062
       width: 0.19970703
-      height: 0.24633789
+      height: 0.24414062
     srcObjName: Cylinders
     samplingRectMatAndUVTiling:
       serializedVersion: 2

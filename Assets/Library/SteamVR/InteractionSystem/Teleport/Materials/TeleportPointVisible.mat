@@ -49,7 +49,7 @@ Material:
     - first:
         name: _MainTex
       second:
-        m_Texture: {fileID: 2800000, guid: ebc38d834b57e9d4d992de0a5470615a, type: 3}
+        m_Texture: {fileID: 2800000, guid: b0b74fe6ce187e840a6e85482e390e03, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - first:
@@ -106,7 +106,7 @@ Material:
       second: 0.02
     - first:
         name: _SeeThru
-      second: 0.25
+      second: 0.225
     - first:
         name: _SrcBlend
       second: 1
@@ -125,4 +125,4 @@ Material:
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _TintColor
-      second: {r: 0.13884604, g: 0.6527148, b: 0.7867677, a: 0.5}
+      second: {r: 0.43014702, g: 0.74040145, b: 0.8602941, a: 0.178}
